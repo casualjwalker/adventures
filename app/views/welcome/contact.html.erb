@@ -1,0 +1,27 @@
+<style>
+  body {
+    color: <%= @color %>;
+  }
+</style>
+
+<h1>CONTACT ME</h1>
+
+<p> Write me a note: <strong>john.doe@tts.com</strong> </p>
+
+<p> Side Note: I like 4 different colors </p>
+
+<p>
+	<%= link_to "Red", contact_path(color: "red"), class: "btn btn-danger" %>
+</p>
+
+<p>
+	<%= link_to "Yellow", contact_path(color: "yellow"), class: "btn btn-warning" %>
+</p>
+
+<p>
+	<%= link_to "Green", contact_path(color: "green"), class: "btn btn-success" %>
+</p>
+
+<p>
+	<%= link_to "Blue", contact_path(color: "blue"), class: "btn btn-primary" %>
+</p>
