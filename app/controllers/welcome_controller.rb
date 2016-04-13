@@ -1,8 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-  	@images = ["cycling.jpg", "jetski.jpg", "scuba.jpg", "skiing.jpg", "snorkeling.jpg"]
-		@random_no = rand(5)
-    @random_image = @images[@random_no]
+  	@images = ["cycling.jpg", "jetski.jpg", "scuba.jpg", "skiing.jpg", "snorkeling.jpg"] 
   end
 
   def about
